@@ -1,0 +1,238 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOGEX 0, 0, 505, 232
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "远控Server"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,0,0,505,231
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 492, 242
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "屏幕"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_DIALOG3 DIALOGEX 0, 0, 661, 245
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "命令行"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,59,68,345,147,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    LTEXT           "命令行：",IDC_STATIC,18,34,35,8
+    EDITTEXT        IDC_EDIT2,59,30,286,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "执行",IDC_BUTTON1,355,30,50,14,0,WS_EX_CLIENTEDGE
+    LTEXT           "显示：",IDC_STATIC,18,69,32,8
+    GROUPBOX        "",IDC_STATIC,16,17,405,208
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,431,20,216,176,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "获取/更新 进程列表",IDC_BUTTON2,490,202,85,14,0,WS_EX_CLIENTEDGE
+END
+
+IDD_DIALOG4 DIALOGEX 0, 0, 528, 295
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "监控"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,58,12,293,87,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN
+    LTEXT           "键盘监控：",IDC_STATIC,9,14,47,8
+    EDITTEXT        IDC_EDIT2,58,171,293,112,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "文件监控：",IDC_STATIC,11,174,44,8
+    GROUPBOX        "",IDC_STATIC,7,2,362,126
+    GROUPBOX        "U盘监控",IDC_STATIC,375,6,146,282
+    EDITTEXT        IDC_EDIT3,383,18,130,262,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "监控目录",IDC_BUTTON1,301,143,50,14,0,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_EDIT4,59,143,228,14,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,7,128,362,160
+    PUSHBUTTON      "安装键盘钩子",IDC_BUTTON2,90,104,64,14
+    PUSHBUTTON      "卸载键盘钩子",IDC_BUTTON3,245,104,64,14
+END
+
+IDD_DIALOG5 DIALOGEX 0, 0, 310, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "其他功能"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "重启自删除",IDC_BUTTON1,43,25,64,14,0,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "立即自删除",IDC_BUTTON2,43,70,63,14,0,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "开机自启动",IDC_BUTTON3,197,25,67,14,0,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "取消自启动",IDC_BUTTON4,197,70,67,14,0,WS_EX_CLIENTEDGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        RIGHTMARGIN, 310
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 238
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 654
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 238
+    END
+
+    IDD_DIALOG4, DIALOG
+    BEGIN
+        VERTGUIDE, 245
+        VERTGUIDE, 309
+        VERTGUIDE, 351
+        BOTTOMMARGIN, 288
+        HORZGUIDE, 128
+        HORZGUIDE, 132
+    END
+
+    IDD_DIALOG5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        VERTGUIDE, 43
+        VERTGUIDE, 264
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+        HORZGUIDE, 25
+        HORZGUIDE, 70
+        HORZGUIDE, 120
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG1 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG2 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG3 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG4 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG5 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "子菜单1"
+    BEGIN
+        MENUITEM "屏幕显示",                        ID_40001
+        MENUITEM "监控",                          ID_40002
+        MENUITEM "cmd",                         ID_40003
+        MENUITEM "其他操作",                        ID_40004
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "yk.ico"
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
